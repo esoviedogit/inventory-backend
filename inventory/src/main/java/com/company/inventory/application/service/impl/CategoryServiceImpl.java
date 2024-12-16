@@ -15,4 +15,16 @@ public class CategoryServiceImpl implements CategoryService {
     public List<CategoryDTO> getAllCategory() {
         return categoryPersistence.getAllCategory();
     }
+
+    @Override
+    public  CategoryDTO  getCategoryById(Integer codigo) {
+       return categoryPersistence.getCategoryById(codigo);
+    }
+
+    @Override
+    public CategoryDTO saveCategory(CategoryDTO categoryDTO) {
+        return categoryPersistence.saveCategory(categoryDTO);
+    }
+
+
 }

@@ -6,6 +6,6 @@ import lombok.Data;
 import java.util.List;
 @Data
 public class CategoryResponse {
-
-    public List<CategoryDTO> category;
+    public CategoryDTO category;
+    public List<CategoryDTO> listCategory;
 }
